@@ -4,12 +4,13 @@
  <systemtable filter="All Interfaces">
   <columns>
    <connections preferredWidth="159" />
-   <irq preferredWidth="34" />
+   <irq preferredWidth="95" />
    <inputclock preferredWidth="201" />
    <name preferredWidth="213" />
-   <description preferredWidth="134" />
+   <description preferredWidth="270" />
   </columns>
  </systemtable>
- <library expandedCategories="Project,Library" />
- <window width="1893" height="800" x="485" y="104" />
+ <library expandedCategories="Library,Project" />
+ <window width="1581" height="999" x="317" y="80" />
+ <hdlexample language="VERILOG" />
 </preferences>

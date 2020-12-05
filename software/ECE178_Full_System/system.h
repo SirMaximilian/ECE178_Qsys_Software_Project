@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'ECE178_nios_20_1'
  * SOPC Builder design path: C:/Users/tasker/Projects/ECE178_nios_system_20_1/ECE178_nios_20_1.sopcinfo
  *
- * Generated: Tue Oct 13 02:41:14 PDT 2020
+ * Generated: Thu Nov 19 04:02:08 PST 2020
  */
 
 /*
