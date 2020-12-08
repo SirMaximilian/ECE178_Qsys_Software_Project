@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Nov 19, 2020 4:02:07 AM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1605787327082</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Dec 8, 2020 2:53:06 AM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1607424786942</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\tasker\Projects\ECE178_nios_system_20_1\software\ECE178_Full_System</BspGeneratedLocation>
         <BspSettingsFile>C:\Users\tasker\Projects\ECE178_nios_system_20_1\software\ECE178_Full_System\settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\tasker\Projects\ECE178_nios_system_20_1\ECE178_nios_20_1.sopcinfo</SopcDesignFile>
@@ -875,6 +875,30 @@
                 <Group>none</Group>
         </Setting>
         <Setting>
+                <SettingName>altera_avalon_uart_driver.enable_small_driver</SettingName>
+                <Identifier>ALTERA_AVALON_UART_SMALL</Identifier>
+                <Type>BooleanDefineOnly</Type>
+                <Value>false</Value>
+                <DefaultValue>false</DefaultValue>
+                <DestinationFile>public_mk_define</DestinationFile>
+                <Description>Small-footprint (polled mode) driver</Description>
+                <Restrictions>none</Restrictions>
+                <Enabled>false</Enabled>
+                <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </Setting>
+        <Setting>
+                <SettingName>altera_avalon_uart_driver.enable_ioctl</SettingName>
+                <Identifier>ALTERA_AVALON_UART_USE_IOCTL</Identifier>
+                <Type>BooleanDefineOnly</Type>
+                <Value>false</Value>
+                <DefaultValue>false</DefaultValue>
+                <DestinationFile>public_mk_define</DestinationFile>
+                <Description>Enable driver ioctl() support. This feature is not compatible with the 'small' driver; ioctl() support will not be compiled if either the UART 'enable_small_driver' or HAL 'enable_reduced_device_drivers' settings are enabled.</Description>
+                <Restrictions>none</Restrictions>
+                <Enabled>false</Enabled>
+                <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </Setting>
+        <Setting>
                 <SettingName>altera_avalon_jtag_uart_driver.enable_small_driver</SettingName>
                 <Identifier>ALTERA_AVALON_JTAG_UART_SMALL</Identifier>
                 <Type>BooleanDefineOnly</Type>
@@ -911,56 +935,230 @@
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>System_Timer</slaveDescriptor>
+                <slaveDescriptor>uart_0</slaveDescriptor>
                 <addressRange>0x08003000 - 0x0800301F</addressRange>
                 <addressSpan>32</addressSpan>
-                <attributes>timer</attributes>
+                <attributes>printable</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>High_Res_Timer</slaveDescriptor>
+                <slaveDescriptor>System_Timer</slaveDescriptor>
                 <addressRange>0x08003020 - 0x0800303F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes>timer</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>KEYS</slaveDescriptor>
-                <addressRange>0x08003040 - 0x0800304F</addressRange>
-                <addressSpan>16</addressSpan>
-                <attributes/>
+                <slaveDescriptor>High_Res_Timer</slaveDescriptor>
+                <addressRange>0x08003040 - 0x0800305F</addressRange>
+                <addressSpan>32</addressSpan>
+                <attributes>timer</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>LEDG</slaveDescriptor>
-                <addressRange>0x08003050 - 0x0800305F</addressRange>
-                <addressSpan>16</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>ledr</slaveDescriptor>
+                <slaveDescriptor>sbus_decoder_reg_10</slaveDescriptor>
                 <addressRange>0x08003060 - 0x0800306F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>switches0_17</slaveDescriptor>
+                <slaveDescriptor>sbus_decoder_channel_15</slaveDescriptor>
                 <addressRange>0x08003070 - 0x0800307F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>hex4_7</slaveDescriptor>
+                <slaveDescriptor>sbus_decoder_channel_14</slaveDescriptor>
                 <addressRange>0x08003080 - 0x0800308F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>hex0_3</slaveDescriptor>
+                <slaveDescriptor>sbus_decoder_channel_13</slaveDescriptor>
                 <addressRange>0x08003090 - 0x0800309F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>sbus_decoder_channel_12</slaveDescriptor>
+                <addressRange>0x080030A0 - 0x080030AF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sbus_decoder_channel_11</slaveDescriptor>
+                <addressRange>0x080030B0 - 0x080030BF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sbus_decoder_channel_10</slaveDescriptor>
+                <addressRange>0x080030C0 - 0x080030CF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sbus_decoder_channel_9</slaveDescriptor>
+                <addressRange>0x080030D0 - 0x080030DF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sbus_decoder_channel_8</slaveDescriptor>
+                <addressRange>0x080030E0 - 0x080030EF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sbus_decoder_channel_7</slaveDescriptor>
+                <addressRange>0x080030F0 - 0x080030FF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sbus_decoder_channel_6</slaveDescriptor>
+                <addressRange>0x08003100 - 0x0800310F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sbus_decoder_channel_5</slaveDescriptor>
+                <addressRange>0x08003110 - 0x0800311F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sbus_decoder_channel_4</slaveDescriptor>
+                <addressRange>0x08003120 - 0x0800312F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sbus_decoder_channel_3</slaveDescriptor>
+                <addressRange>0x08003130 - 0x0800313F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sbus_decoder_channel_2</slaveDescriptor>
+                <addressRange>0x08003140 - 0x0800314F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sbus_decoder_channel_1</slaveDescriptor>
+                <addressRange>0x08003150 - 0x0800315F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sbus_decoder_channel_0</slaveDescriptor>
+                <addressRange>0x08003160 - 0x0800316F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sbus_decoder_reg_9</slaveDescriptor>
+                <addressRange>0x08003170 - 0x0800317F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sbus_decoder_reg_8</slaveDescriptor>
+                <addressRange>0x08003180 - 0x0800318F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sbus_decoder_reg_7</slaveDescriptor>
+                <addressRange>0x08003190 - 0x0800319F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sbus_decoder_reg_6</slaveDescriptor>
+                <addressRange>0x080031A0 - 0x080031AF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sbus_decoder_reg_5</slaveDescriptor>
+                <addressRange>0x080031B0 - 0x080031BF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sbus_decoder_reg_4</slaveDescriptor>
+                <addressRange>0x080031C0 - 0x080031CF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sbus_decoder_reg_3</slaveDescriptor>
+                <addressRange>0x080031D0 - 0x080031DF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sbus_decoder_reg_2</slaveDescriptor>
+                <addressRange>0x080031E0 - 0x080031EF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sbus_decoder_reg_1</slaveDescriptor>
+                <addressRange>0x080031F0 - 0x080031FF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sbus_decoder_reg_0</slaveDescriptor>
+                <addressRange>0x08003200 - 0x0800320F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>GPIO</slaveDescriptor>
+                <addressRange>0x08003210 - 0x0800321F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>KEYS</slaveDescriptor>
+                <addressRange>0x08003220 - 0x0800322F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>LEDG</slaveDescriptor>
+                <addressRange>0x08003230 - 0x0800323F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>ledr</slaveDescriptor>
+                <addressRange>0x08003240 - 0x0800324F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>switches0_17</slaveDescriptor>
+                <addressRange>0x08003250 - 0x0800325F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>hex4_7</slaveDescriptor>
+                <addressRange>0x08003260 - 0x0800326F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>hex0_3</slaveDescriptor>
+                <addressRange>0x08003270 - 0x0800327F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>jtag_uart_0</slaveDescriptor>
-                <addressRange>0x080030A0 - 0x080030A7</addressRange>
+                <addressRange>0x08003280 - 0x08003287</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>

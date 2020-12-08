@@ -170,7 +170,7 @@ https://fpgasoftware.intel.com/eula.
 		(text "we_n" (rect 149 475 322 960)(font "Arial" (color 0 0 0)))
 		(text "switches0_17" (rect 67 491 206 995)(font "Arial" (color 128 0 0)(font_size 9)))
 		(text "export" (rect 149 515 334 1040)(font "Arial" (color 0 0 0)))
-		(text " system " (rect 301 536 650 1082)(font "Arial" ))
+		(text " ECE178_nios_20_1_project " (rect 214 536 584 1082)(font "Arial" ))
 		(line (pt 144 32)(pt 192 32)(line_width 1))
 		(line (pt 192 32)(pt 192 536)(line_width 1))
 		(line (pt 144 536)(pt 192 536)(line_width 1))

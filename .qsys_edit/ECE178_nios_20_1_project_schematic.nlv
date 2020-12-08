@@ -11,7 +11,7 @@ preplace inst ECE178_nios_20_1_project.nios2_gen2_0 -pg 1 -lvl 2 -y 600
 preplace inst ECE178_nios_20_1_project.System_Timer -pg 1 -lvl 3 -y 510
 preplace inst ECE178_nios_20_1_project.sys_sdram_pll_0.reset_from_locked -pg 1
 preplace inst ECE178_nios_20_1_project.hex0_3 -pg 1 -lvl 3 -y 30
-preplace inst ECE178_nios_20_1_project.sys_sdram_pll_0 -pg 1 -lvl 1 -y 900
+preplace inst ECE178_nios_20_1_project.sys_sdram_pll_0 -pg 1 -lvl 1 -y 920
 preplace inst ECE178_nios_20_1_project.jtag_uart_0 -pg 1 -lvl 3 -y 610
 preplace inst ECE178_nios_20_1_project.KEYS -pg 1 -lvl 3 -y 710
 preplace inst ECE178_nios_20_1_project.High_Res_Timer -pg 1 -lvl 3 -y 410
@@ -19,18 +19,18 @@ preplace inst ECE178_nios_20_1_project.onchip_memory2_0 -pg 1 -lvl 3 -y 330
 preplace inst ECE178_nios_20_1_project.nios2_gen2_0.reset_bridge -pg 1
 preplace inst ECE178_nios_20_1_project.ledr -pg 1 -lvl 3 -y 830
 preplace inst ECE178_nios_20_1_project.sdram_0 -pg 1 -lvl 3 -y 1030
+preplace netloc EXPORT<net_container>ECE178_nios_20_1_project</net_container>(SLAVE)ECE178_nios_20_1_project.hex4_7,(SLAVE)hex4_7.external_connection) 1 0 3 NJ 160 NJ 160 NJ
 preplace netloc EXPORT<net_container>ECE178_nios_20_1_project</net_container>(SLAVE)ECE178_nios_20_1_project.clk,(SLAVE)sys_sdram_pll_0.ref_clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>ECE178_nios_20_1_project</net_container>(SLAVE)ECE178_nios_20_1_project.switches0_17,(SLAVE)switches0_17.external_connection) 1 0 3 NJ 880 NJ 960 NJ
 preplace netloc EXPORT<net_container>ECE178_nios_20_1_project</net_container>(SLAVE)ECE178_nios_20_1_project.sdram,(SLAVE)sdram_0.wire) 1 0 3 NJ 1100 NJ 1100 NJ
-preplace netloc FAN_OUT<net_container>ECE178_nios_20_1_project</net_container>(SLAVE)hex4_7.clk,(SLAVE)ledr.clk,(SLAVE)nios2_gen2_0.clk,(SLAVE)onchip_memory2_0.clk1,(SLAVE)LEDG.clk,(SLAVE)System_Timer.clk,(SLAVE)jtag_uart_0.clk,(SLAVE)hex0_3.clk,(SLAVE)sdram_0.clk,(SLAVE)High_Res_Timer.clk,(SLAVE)KEYS.clk,(SLAVE)switches0_17.clk,(MASTER)sys_sdram_pll_0.sys_clk) 1 1 2 340 980 800
-preplace netloc EXPORT<net_container>ECE178_nios_20_1_project</net_container>(SLAVE)switches0_17.external_connection,(SLAVE)ECE178_nios_20_1_project.switches0_17) 1 0 3 NJ 1000 NJ 960 NJ
 preplace netloc EXPORT<net_container>ECE178_nios_20_1_project</net_container>(SLAVE)KEYS.external_connection,(SLAVE)ECE178_nios_20_1_project.key) 1 0 3 NJ 740 NJ 740 NJ
-preplace netloc INTERCONNECT<net_container>ECE178_nios_20_1_project</net_container>(MASTER)sys_sdram_pll_0.reset_source,(SLAVE)hex4_7.reset,(SLAVE)KEYS.reset,(SLAVE)hex0_3.reset,(SLAVE)High_Res_Timer.reset,(SLAVE)nios2_gen2_0.reset,(MASTER)nios2_gen2_0.debug_reset_request,(SLAVE)ledr.reset,(SLAVE)switches0_17.reset,(SLAVE)jtag_uart_0.reset,(SLAVE)sdram_0.reset,(SLAVE)LEDG.reset,(SLAVE)onchip_memory2_0.reset1,(SLAVE)System_Timer.reset) 1 1 2 380 1000 780
-preplace netloc EXPORT<net_container>ECE178_nios_20_1_project</net_container>(SLAVE)hex4_7.external_connection,(SLAVE)ECE178_nios_20_1_project.hex4_7) 1 0 3 NJ 160 NJ 160 NJ
-preplace netloc EXPORT<net_container>ECE178_nios_20_1_project</net_container>(SLAVE)LEDG.external_connection,(SLAVE)ECE178_nios_20_1_project.ledg) 1 0 3 NJ 260 NJ 260 NJ
+preplace netloc FAN_OUT<net_container>ECE178_nios_20_1_project</net_container>(SLAVE)jtag_uart_0.irq,(SLAVE)System_Timer.irq,(MASTER)nios2_gen2_0.irq,(SLAVE)High_Res_Timer.irq,(SLAVE)KEYS.irq) 1 2 1 820
 preplace netloc EXPORT<net_container>ECE178_nios_20_1_project</net_container>(SLAVE)ECE178_nios_20_1_project.reset,(SLAVE)sys_sdram_pll_0.ref_reset) 1 0 1 NJ
-preplace netloc INTERCONNECT<net_container>ECE178_nios_20_1_project</net_container>(SLAVE)jtag_uart_0.avalon_jtag_slave,(SLAVE)ledr.s1,(SLAVE)System_Timer.s1,(MASTER)nios2_gen2_0.instruction_master,(SLAVE)nios2_gen2_0.debug_mem_slave,(SLAVE)switches0_17.s1,(SLAVE)sdram_0.s1,(SLAVE)High_Res_Timer.s1,(SLAVE)hex0_3.s1,(SLAVE)hex4_7.s1,(SLAVE)onchip_memory2_0.s1,(SLAVE)LEDG.s1,(SLAVE)KEYS.s1,(MASTER)nios2_gen2_0.data_master) 1 1 2 400 1020 760
+preplace netloc INTERCONNECT<net_container>ECE178_nios_20_1_project</net_container>(SLAVE)sdram_0.reset,(SLAVE)hex0_3.reset,(SLAVE)System_Timer.reset,(MASTER)nios2_gen2_0.debug_reset_request,(SLAVE)hex4_7.reset,(SLAVE)switches0_17.reset,(SLAVE)jtag_uart_0.reset,(SLAVE)ledr.reset,(SLAVE)LEDG.reset,(SLAVE)nios2_gen2_0.reset,(MASTER)sys_sdram_pll_0.reset_source,(SLAVE)High_Res_Timer.reset,(SLAVE)onchip_memory2_0.reset1,(SLAVE)KEYS.reset) 1 1 2 380 1000 780
+preplace netloc INTERCONNECT<net_container>ECE178_nios_20_1_project</net_container>(SLAVE)sdram_0.s1,(MASTER)nios2_gen2_0.data_master,(SLAVE)System_Timer.s1,(SLAVE)nios2_gen2_0.debug_mem_slave,(MASTER)nios2_gen2_0.instruction_master,(SLAVE)KEYS.s1,(SLAVE)onchip_memory2_0.s1,(SLAVE)switches0_17.s1,(SLAVE)hex4_7.s1,(SLAVE)High_Res_Timer.s1,(SLAVE)jtag_uart_0.avalon_jtag_slave,(SLAVE)hex0_3.s1,(SLAVE)LEDG.s1,(SLAVE)ledr.s1) 1 1 2 380 560 760
 preplace netloc EXPORT<net_container>ECE178_nios_20_1_project</net_container>(SLAVE)ledr.external_connection,(SLAVE)ECE178_nios_20_1_project.ledr) 1 0 3 NJ 860 NJ 860 NJ
 preplace netloc EXPORT<net_container>ECE178_nios_20_1_project</net_container>(SLAVE)ECE178_nios_20_1_project.hex0_3,(SLAVE)hex0_3.external_connection) 1 0 3 NJ 60 NJ 60 NJ
-preplace netloc FAN_OUT<net_container>ECE178_nios_20_1_project</net_container>(SLAVE)jtag_uart_0.irq,(SLAVE)High_Res_Timer.irq,(MASTER)nios2_gen2_0.irq,(SLAVE)System_Timer.irq,(SLAVE)KEYS.irq) 1 2 1 820
+preplace netloc EXPORT<net_container>ECE178_nios_20_1_project</net_container>(SLAVE)ECE178_nios_20_1_project.ledg,(SLAVE)LEDG.external_connection) 1 0 3 NJ 260 NJ 260 NJ
+preplace netloc FAN_OUT<net_container>ECE178_nios_20_1_project</net_container>(MASTER)sys_sdram_pll_0.sys_clk,(SLAVE)LEDG.clk,(SLAVE)onchip_memory2_0.clk1,(SLAVE)High_Res_Timer.clk,(SLAVE)ledr.clk,(SLAVE)sdram_0.clk,(SLAVE)jtag_uart_0.clk,(SLAVE)hex0_3.clk,(SLAVE)nios2_gen2_0.clk,(SLAVE)switches0_17.clk,(SLAVE)KEYS.clk,(SLAVE)System_Timer.clk,(SLAVE)hex4_7.clk) 1 1 2 340 980 800
 levelinfo -pg 1 0 90 1030
 levelinfo -hier ECE178_nios_20_1_project 100 180 520 870 1020

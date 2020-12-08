@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'ECE178_nios_20_1'
  * SOPC Builder design path: C:/Users/tasker/Projects/ECE178_nios_system_20_1/ECE178_nios_20_1.sopcinfo
  *
- * Generated: Mon Oct 12 23:57:59 PDT 2020
+ * Generated: Sun Dec 06 17:20:55 PST 2020
  */
 
 /*
@@ -61,6 +61,7 @@
 #include "altera_nios2_gen2_irq.h"
 #include "altera_avalon_jtag_uart.h"
 #include "altera_avalon_timer.h"
+#include "altera_avalon_uart.h"
 
 /*
  * Allocate the device storage
@@ -70,6 +71,7 @@ ALTERA_NIOS2_GEN2_IRQ_INSTANCE ( NIOS2_GEN2_0, nios2_gen2_0);
 ALTERA_AVALON_JTAG_UART_INSTANCE ( JTAG_UART_0, jtag_uart_0);
 ALTERA_AVALON_TIMER_INSTANCE ( HIGH_RES_TIMER, High_Res_Timer);
 ALTERA_AVALON_TIMER_INSTANCE ( SYSTEM_TIMER, System_Timer);
+ALTERA_AVALON_UART_INSTANCE ( UART_0, uart_0);
 
 /*
  * Initialize the interrupt controller devices
@@ -95,4 +97,5 @@ void alt_sys_init( void )
     ALTERA_AVALON_TIMER_INIT ( HIGH_RES_TIMER, High_Res_Timer);
     ALTERA_AVALON_TIMER_INIT ( SYSTEM_TIMER, System_Timer);
     ALTERA_AVALON_JTAG_UART_INIT ( JTAG_UART_0, jtag_uart_0);
+    ALTERA_AVALON_UART_INIT ( UART_0, uart_0);
 }
