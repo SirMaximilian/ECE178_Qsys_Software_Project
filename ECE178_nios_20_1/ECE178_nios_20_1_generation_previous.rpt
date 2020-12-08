@@ -2,8 +2,12 @@ Info: Starting: Create block symbol file (.bsf)
 Info: qsys-generate C:\Users\tasker\Projects\ECE178_nios_system_20_1\ECE178_nios_20_1.qsys --block-symbol-file --output-directory=C:\Users\tasker\Projects\ECE178_nios_system_20_1\ECE178_nios_20_1 --family="Cyclone IV E" --part=EP4CE115F29C7
 Progress: Loading ECE178_nios_system_20_1/ECE178_nios_20_1.qsys
 Progress: Reading input file
+Progress: Adding GPIO [altera_avalon_pio 20.1]
+Progress: Parameterizing module GPIO
 Progress: Adding High_Res_Timer [altera_avalon_timer 20.1]
 Progress: Parameterizing module High_Res_Timer
+Progress: Adding KEYS [altera_avalon_pio 20.1]
+Progress: Parameterizing module KEYS
 Progress: Adding LEDG [altera_avalon_pio 20.1]
 Progress: Parameterizing module LEDG
 Progress: Adding System_Timer [altera_avalon_timer 20.1]
@@ -20,18 +24,75 @@ Progress: Adding nios2_gen2_0 [altera_nios2_gen2 20.1]
 Progress: Parameterizing module nios2_gen2_0
 Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 20.1]
 Progress: Parameterizing module onchip_memory2_0
+Progress: Adding sbus_decoder_channel_0 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_0
+Progress: Adding sbus_decoder_channel_1 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_1
+Progress: Adding sbus_decoder_channel_10 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_10
+Progress: Adding sbus_decoder_channel_11 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_11
+Progress: Adding sbus_decoder_channel_12 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_12
+Progress: Adding sbus_decoder_channel_13 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_13
+Progress: Adding sbus_decoder_channel_14 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_14
+Progress: Adding sbus_decoder_channel_15 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_15
+Progress: Adding sbus_decoder_channel_2 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_2
+Progress: Adding sbus_decoder_channel_3 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_3
+Progress: Adding sbus_decoder_channel_4 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_4
+Progress: Adding sbus_decoder_channel_5 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_5
+Progress: Adding sbus_decoder_channel_6 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_6
+Progress: Adding sbus_decoder_channel_7 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_7
+Progress: Adding sbus_decoder_channel_8 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_8
+Progress: Adding sbus_decoder_channel_9 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_9
+Progress: Adding sbus_decoder_reg_0 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_reg_0
+Progress: Adding sbus_decoder_reg_1 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_reg_1
+Progress: Adding sbus_decoder_reg_10 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_reg_10
+Progress: Adding sbus_decoder_reg_2 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_reg_2
+Progress: Adding sbus_decoder_reg_3 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_reg_3
+Progress: Adding sbus_decoder_reg_4 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_reg_4
+Progress: Adding sbus_decoder_reg_5 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_reg_5
+Progress: Adding sbus_decoder_reg_6 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_reg_6
+Progress: Adding sbus_decoder_reg_7 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_reg_7
+Progress: Adding sbus_decoder_reg_8 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_reg_8
+Progress: Adding sbus_decoder_reg_9 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_reg_9
 Progress: Adding sdram_0 [altera_avalon_new_sdram_controller 20.1]
 Progress: Parameterizing module sdram_0
-Progress: Adding sram_0 [altera_up_avalon_sram 18.0]
-Progress: Parameterizing module sram_0
+Progress: Adding slave_template_0 [slave_template 2.0]
+Progress: Parameterizing module slave_template_0
 Progress: Adding switches0_17 [altera_avalon_pio 20.1]
 Progress: Parameterizing module switches0_17
 Progress: Adding sys_sdram_pll_0 [altera_up_avalon_sys_sdram_pll 18.0]
 Progress: Parameterizing module sys_sdram_pll_0
+Progress: Adding uart_0 [altera_avalon_uart 20.1]
+Progress: Parameterizing module uart_0
 Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
+Info: ECE178_nios_20_1.KEYS: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info: ECE178_nios_20_1.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
 Info: ECE178_nios_20_1.sdram_0: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
 Info: ECE178_nios_20_1.switches0_17: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
@@ -43,8 +104,12 @@ Info: Starting: Create HDL design files for synthesis
 Info: qsys-generate C:\Users\tasker\Projects\ECE178_nios_system_20_1\ECE178_nios_20_1.qsys --synthesis=VERILOG --output-directory=C:\Users\tasker\Projects\ECE178_nios_system_20_1\ECE178_nios_20_1\synthesis --family="Cyclone IV E" --part=EP4CE115F29C7
 Progress: Loading ECE178_nios_system_20_1/ECE178_nios_20_1.qsys
 Progress: Reading input file
+Progress: Adding GPIO [altera_avalon_pio 20.1]
+Progress: Parameterizing module GPIO
 Progress: Adding High_Res_Timer [altera_avalon_timer 20.1]
 Progress: Parameterizing module High_Res_Timer
+Progress: Adding KEYS [altera_avalon_pio 20.1]
+Progress: Parameterizing module KEYS
 Progress: Adding LEDG [altera_avalon_pio 20.1]
 Progress: Parameterizing module LEDG
 Progress: Adding System_Timer [altera_avalon_timer 20.1]
@@ -61,61 +126,130 @@ Progress: Adding nios2_gen2_0 [altera_nios2_gen2 20.1]
 Progress: Parameterizing module nios2_gen2_0
 Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 20.1]
 Progress: Parameterizing module onchip_memory2_0
+Progress: Adding sbus_decoder_channel_0 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_0
+Progress: Adding sbus_decoder_channel_1 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_1
+Progress: Adding sbus_decoder_channel_10 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_10
+Progress: Adding sbus_decoder_channel_11 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_11
+Progress: Adding sbus_decoder_channel_12 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_12
+Progress: Adding sbus_decoder_channel_13 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_13
+Progress: Adding sbus_decoder_channel_14 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_14
+Progress: Adding sbus_decoder_channel_15 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_15
+Progress: Adding sbus_decoder_channel_2 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_2
+Progress: Adding sbus_decoder_channel_3 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_3
+Progress: Adding sbus_decoder_channel_4 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_4
+Progress: Adding sbus_decoder_channel_5 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_5
+Progress: Adding sbus_decoder_channel_6 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_6
+Progress: Adding sbus_decoder_channel_7 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_7
+Progress: Adding sbus_decoder_channel_8 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_8
+Progress: Adding sbus_decoder_channel_9 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_channel_9
+Progress: Adding sbus_decoder_reg_0 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_reg_0
+Progress: Adding sbus_decoder_reg_1 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_reg_1
+Progress: Adding sbus_decoder_reg_10 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_reg_10
+Progress: Adding sbus_decoder_reg_2 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_reg_2
+Progress: Adding sbus_decoder_reg_3 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_reg_3
+Progress: Adding sbus_decoder_reg_4 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_reg_4
+Progress: Adding sbus_decoder_reg_5 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_reg_5
+Progress: Adding sbus_decoder_reg_6 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_reg_6
+Progress: Adding sbus_decoder_reg_7 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_reg_7
+Progress: Adding sbus_decoder_reg_8 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_reg_8
+Progress: Adding sbus_decoder_reg_9 [altera_avalon_pio 20.1]
+Progress: Parameterizing module sbus_decoder_reg_9
 Progress: Adding sdram_0 [altera_avalon_new_sdram_controller 20.1]
 Progress: Parameterizing module sdram_0
-Progress: Adding sram_0 [altera_up_avalon_sram 18.0]
-Progress: Parameterizing module sram_0
+Progress: Adding slave_template_0 [slave_template 2.0]
+Progress: Parameterizing module slave_template_0
 Progress: Adding switches0_17 [altera_avalon_pio 20.1]
 Progress: Parameterizing module switches0_17
 Progress: Adding sys_sdram_pll_0 [altera_up_avalon_sys_sdram_pll 18.0]
 Progress: Parameterizing module sys_sdram_pll_0
+Progress: Adding uart_0 [altera_avalon_uart 20.1]
+Progress: Parameterizing module uart_0
 Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
+Info: ECE178_nios_20_1.KEYS: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info: ECE178_nios_20_1.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
 Info: ECE178_nios_20_1.sdram_0: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
 Info: ECE178_nios_20_1.switches0_17: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info: ECE178_nios_20_1.sys_sdram_pll_0: Refclk Freq: 50.0
 Info: ECE178_nios_20_1: Generating ECE178_nios_20_1 "ECE178_nios_20_1" for QUARTUS_SYNTH
+Info: GPIO: Starting RTL generation for module 'ECE178_nios_20_1_GPIO'
+Info: GPIO:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=ECE178_nios_20_1_GPIO --dir=C:/Users/tasker/AppData/Local/Temp/alt8604_2100725811567012199.dir/0037_GPIO_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/tasker/AppData/Local/Temp/alt8604_2100725811567012199.dir/0037_GPIO_gen//ECE178_nios_20_1_GPIO_component_configuration.pl  --do_build_sim=0  ]
+Info: GPIO: Done RTL generation for module 'ECE178_nios_20_1_GPIO'
+Info: GPIO: "ECE178_nios_20_1" instantiated altera_avalon_pio "GPIO"
 Info: High_Res_Timer: Starting RTL generation for module 'ECE178_nios_20_1_High_Res_Timer'
-Info: High_Res_Timer:   Generation command is [exec C:/intelFPGA_lite/20.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/20.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=ECE178_nios_20_1_High_Res_Timer --dir=C:/Users/tasker/AppData/Local/Temp/alt8548_5832821237847046470.dir/0002_High_Res_Timer_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/tasker/AppData/Local/Temp/alt8548_5832821237847046470.dir/0002_High_Res_Timer_gen//ECE178_nios_20_1_High_Res_Timer_component_configuration.pl  --do_build_sim=0  ]
+Info: High_Res_Timer:   Generation command is [exec C:/intelFPGA_lite/20.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/20.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=ECE178_nios_20_1_High_Res_Timer --dir=C:/Users/tasker/AppData/Local/Temp/alt8604_2100725811567012199.dir/0038_High_Res_Timer_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/tasker/AppData/Local/Temp/alt8604_2100725811567012199.dir/0038_High_Res_Timer_gen//ECE178_nios_20_1_High_Res_Timer_component_configuration.pl  --do_build_sim=0  ]
 Info: High_Res_Timer: Done RTL generation for module 'ECE178_nios_20_1_High_Res_Timer'
 Info: High_Res_Timer: "ECE178_nios_20_1" instantiated altera_avalon_timer "High_Res_Timer"
+Info: KEYS: Starting RTL generation for module 'ECE178_nios_20_1_KEYS'
+Info: KEYS:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=ECE178_nios_20_1_KEYS --dir=C:/Users/tasker/AppData/Local/Temp/alt8604_2100725811567012199.dir/0039_KEYS_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/tasker/AppData/Local/Temp/alt8604_2100725811567012199.dir/0039_KEYS_gen//ECE178_nios_20_1_KEYS_component_configuration.pl  --do_build_sim=0  ]
+Info: KEYS: Done RTL generation for module 'ECE178_nios_20_1_KEYS'
+Info: KEYS: "ECE178_nios_20_1" instantiated altera_avalon_pio "KEYS"
 Info: LEDG: Starting RTL generation for module 'ECE178_nios_20_1_LEDG'
-Info: LEDG:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=ECE178_nios_20_1_LEDG --dir=C:/Users/tasker/AppData/Local/Temp/alt8548_5832821237847046470.dir/0003_LEDG_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/tasker/AppData/Local/Temp/alt8548_5832821237847046470.dir/0003_LEDG_gen//ECE178_nios_20_1_LEDG_component_configuration.pl  --do_build_sim=0  ]
+Info: LEDG:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=ECE178_nios_20_1_LEDG --dir=C:/Users/tasker/AppData/Local/Temp/alt8604_2100725811567012199.dir/0040_LEDG_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/tasker/AppData/Local/Temp/alt8604_2100725811567012199.dir/0040_LEDG_gen//ECE178_nios_20_1_LEDG_component_configuration.pl  --do_build_sim=0  ]
 Info: LEDG: Done RTL generation for module 'ECE178_nios_20_1_LEDG'
 Info: LEDG: "ECE178_nios_20_1" instantiated altera_avalon_pio "LEDG"
 Info: System_Timer: Starting RTL generation for module 'ECE178_nios_20_1_System_Timer'
-Info: System_Timer:   Generation command is [exec C:/intelFPGA_lite/20.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/20.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=ECE178_nios_20_1_System_Timer --dir=C:/Users/tasker/AppData/Local/Temp/alt8548_5832821237847046470.dir/0004_System_Timer_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/tasker/AppData/Local/Temp/alt8548_5832821237847046470.dir/0004_System_Timer_gen//ECE178_nios_20_1_System_Timer_component_configuration.pl  --do_build_sim=0  ]
+Info: System_Timer:   Generation command is [exec C:/intelFPGA_lite/20.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/20.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=ECE178_nios_20_1_System_Timer --dir=C:/Users/tasker/AppData/Local/Temp/alt8604_2100725811567012199.dir/0041_System_Timer_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/tasker/AppData/Local/Temp/alt8604_2100725811567012199.dir/0041_System_Timer_gen//ECE178_nios_20_1_System_Timer_component_configuration.pl  --do_build_sim=0  ]
 Info: System_Timer: Done RTL generation for module 'ECE178_nios_20_1_System_Timer'
 Info: System_Timer: "ECE178_nios_20_1" instantiated altera_avalon_timer "System_Timer"
 Info: hex0_3: Starting RTL generation for module 'ECE178_nios_20_1_hex0_3'
-Info: hex0_3:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=ECE178_nios_20_1_hex0_3 --dir=C:/Users/tasker/AppData/Local/Temp/alt8548_5832821237847046470.dir/0005_hex0_3_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/tasker/AppData/Local/Temp/alt8548_5832821237847046470.dir/0005_hex0_3_gen//ECE178_nios_20_1_hex0_3_component_configuration.pl  --do_build_sim=0  ]
+Info: hex0_3:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=ECE178_nios_20_1_hex0_3 --dir=C:/Users/tasker/AppData/Local/Temp/alt8604_2100725811567012199.dir/0042_hex0_3_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/tasker/AppData/Local/Temp/alt8604_2100725811567012199.dir/0042_hex0_3_gen//ECE178_nios_20_1_hex0_3_component_configuration.pl  --do_build_sim=0  ]
 Info: hex0_3: Done RTL generation for module 'ECE178_nios_20_1_hex0_3'
 Info: hex0_3: "ECE178_nios_20_1" instantiated altera_avalon_pio "hex0_3"
 Info: jtag_uart_0: Starting RTL generation for module 'ECE178_nios_20_1_jtag_uart_0'
-Info: jtag_uart_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=ECE178_nios_20_1_jtag_uart_0 --dir=C:/Users/tasker/AppData/Local/Temp/alt8548_5832821237847046470.dir/0006_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/tasker/AppData/Local/Temp/alt8548_5832821237847046470.dir/0006_jtag_uart_0_gen//ECE178_nios_20_1_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=ECE178_nios_20_1_jtag_uart_0 --dir=C:/Users/tasker/AppData/Local/Temp/alt8604_2100725811567012199.dir/0043_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/tasker/AppData/Local/Temp/alt8604_2100725811567012199.dir/0043_jtag_uart_0_gen//ECE178_nios_20_1_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
 Info: jtag_uart_0: Done RTL generation for module 'ECE178_nios_20_1_jtag_uart_0'
 Info: jtag_uart_0: "ECE178_nios_20_1" instantiated altera_avalon_jtag_uart "jtag_uart_0"
 Info: ledr: Starting RTL generation for module 'ECE178_nios_20_1_ledr'
-Info: ledr:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=ECE178_nios_20_1_ledr --dir=C:/Users/tasker/AppData/Local/Temp/alt8548_5832821237847046470.dir/0007_ledr_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/tasker/AppData/Local/Temp/alt8548_5832821237847046470.dir/0007_ledr_gen//ECE178_nios_20_1_ledr_component_configuration.pl  --do_build_sim=0  ]
+Info: ledr:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=ECE178_nios_20_1_ledr --dir=C:/Users/tasker/AppData/Local/Temp/alt8604_2100725811567012199.dir/0044_ledr_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/tasker/AppData/Local/Temp/alt8604_2100725811567012199.dir/0044_ledr_gen//ECE178_nios_20_1_ledr_component_configuration.pl  --do_build_sim=0  ]
 Info: ledr: Done RTL generation for module 'ECE178_nios_20_1_ledr'
 Info: ledr: "ECE178_nios_20_1" instantiated altera_avalon_pio "ledr"
 Info: nios2_gen2_0: "ECE178_nios_20_1" instantiated altera_nios2_gen2 "nios2_gen2_0"
 Info: onchip_memory2_0: Starting RTL generation for module 'ECE178_nios_20_1_onchip_memory2_0'
-Info: onchip_memory2_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=ECE178_nios_20_1_onchip_memory2_0 --dir=C:/Users/tasker/AppData/Local/Temp/alt8548_5832821237847046470.dir/0008_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/tasker/AppData/Local/Temp/alt8548_5832821237847046470.dir/0008_onchip_memory2_0_gen//ECE178_nios_20_1_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=ECE178_nios_20_1_onchip_memory2_0 --dir=C:/Users/tasker/AppData/Local/Temp/alt8604_2100725811567012199.dir/0045_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/tasker/AppData/Local/Temp/alt8604_2100725811567012199.dir/0045_onchip_memory2_0_gen//ECE178_nios_20_1_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
 Info: onchip_memory2_0: Done RTL generation for module 'ECE178_nios_20_1_onchip_memory2_0'
 Info: onchip_memory2_0: "ECE178_nios_20_1" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
 Info: sdram_0: Starting RTL generation for module 'ECE178_nios_20_1_sdram_0'
-Info: sdram_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=ECE178_nios_20_1_sdram_0 --dir=C:/Users/tasker/AppData/Local/Temp/alt8548_5832821237847046470.dir/0009_sdram_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/tasker/AppData/Local/Temp/alt8548_5832821237847046470.dir/0009_sdram_0_gen//ECE178_nios_20_1_sdram_0_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=ECE178_nios_20_1_sdram_0 --dir=C:/Users/tasker/AppData/Local/Temp/alt8604_2100725811567012199.dir/0046_sdram_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/tasker/AppData/Local/Temp/alt8604_2100725811567012199.dir/0046_sdram_0_gen//ECE178_nios_20_1_sdram_0_component_configuration.pl  --do_build_sim=0  ]
 Info: sdram_0: Done RTL generation for module 'ECE178_nios_20_1_sdram_0'
 Info: sdram_0: "ECE178_nios_20_1" instantiated altera_avalon_new_sdram_controller "sdram_0"
 Info: switches0_17: Starting RTL generation for module 'ECE178_nios_20_1_switches0_17'
-Info: switches0_17:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=ECE178_nios_20_1_switches0_17 --dir=C:/Users/tasker/AppData/Local/Temp/alt8548_5832821237847046470.dir/0010_switches0_17_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/tasker/AppData/Local/Temp/alt8548_5832821237847046470.dir/0010_switches0_17_gen//ECE178_nios_20_1_switches0_17_component_configuration.pl  --do_build_sim=0  ]
+Info: switches0_17:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=ECE178_nios_20_1_switches0_17 --dir=C:/Users/tasker/AppData/Local/Temp/alt8604_2100725811567012199.dir/0047_switches0_17_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/tasker/AppData/Local/Temp/alt8604_2100725811567012199.dir/0047_switches0_17_gen//ECE178_nios_20_1_switches0_17_component_configuration.pl  --do_build_sim=0  ]
 Info: switches0_17: Done RTL generation for module 'ECE178_nios_20_1_switches0_17'
 Info: switches0_17: "ECE178_nios_20_1" instantiated altera_avalon_pio "switches0_17"
 Info: sys_sdram_pll_0: "ECE178_nios_20_1" instantiated altera_up_avalon_sys_sdram_pll "sys_sdram_pll_0"
+Info: uart_0: Starting RTL generation for module 'ECE178_nios_20_1_uart_0'
+Info: uart_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart/generate_rtl.pl --name=ECE178_nios_20_1_uart_0 --dir=C:/Users/tasker/AppData/Local/Temp/alt8604_2100725811567012199.dir/0048_uart_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/tasker/AppData/Local/Temp/alt8604_2100725811567012199.dir/0048_uart_0_gen//ECE178_nios_20_1_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: uart_0: Done RTL generation for module 'ECE178_nios_20_1_uart_0'
+Info: uart_0: "ECE178_nios_20_1" instantiated altera_avalon_uart "uart_0"
 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
@@ -127,17 +261,20 @@ Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_010: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_011: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_012: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_013: Inserting error_adapter: error_adapter_0
 Info: mm_interconnect_0: "ECE178_nios_20_1" instantiated altera_mm_interconnect "mm_interconnect_0"
 Info: irq_mapper: "ECE178_nios_20_1" instantiated altera_irq_mapper "irq_mapper"
 Info: rst_controller: "ECE178_nios_20_1" instantiated altera_reset_controller "rst_controller"
 Info: cpu: Starting RTL generation for module 'ECE178_nios_20_1_nios2_gen2_0_cpu'
-Info: cpu:   Generation command is [exec C:/intelFPGA_lite/20.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/20.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=ECE178_nios_20_1_nios2_gen2_0_cpu --dir=C:/Users/tasker/AppData/Local/Temp/alt8548_5832821237847046470.dir/0013_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/20.1/quartus/bin64/ --verilog --config=C:/Users/tasker/AppData/Local/Temp/alt8548_5832821237847046470.dir/0013_cpu_gen//ECE178_nios_20_1_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
-Info: cpu: # 2020.10.12 23:43:07 (*) Starting Nios II generation
-Info: cpu: # 2020.10.12 23:43:07 (*)   Elaborating CPU configuration settings
-Info: cpu: # 2020.10.12 23:43:07 (*)   Creating all objects for CPU
-Info: cpu: # 2020.10.12 23:43:07 (*)   Generating RTL from CPU objects
-Info: cpu: # 2020.10.12 23:43:07 (*)   Creating plain-text RTL
-Info: cpu: # 2020.10.12 23:43:08 (*) Done Nios II generation
+Info: cpu:   Generation command is [exec C:/intelFPGA_lite/20.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/20.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=ECE178_nios_20_1_nios2_gen2_0_cpu --dir=C:/Users/tasker/AppData/Local/Temp/alt8604_2100725811567012199.dir/0051_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/20.1/quartus/bin64/ --verilog --config=C:/Users/tasker/AppData/Local/Temp/alt8604_2100725811567012199.dir/0051_cpu_gen//ECE178_nios_20_1_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2020.12.07 23:14:37 (*) Starting Nios II generation
+Info: cpu: # 2020.12.07 23:14:37 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2020.12.07 23:14:37 (*)   Creating all objects for CPU
+Info: cpu: # 2020.12.07 23:14:37 (*)   Generating RTL from CPU objects
+Info: cpu: # 2020.12.07 23:14:37 (*)   Creating plain-text RTL
+Info: cpu: # 2020.12.07 23:14:38 (*) Done Nios II generation
 Info: cpu: Done RTL generation for module 'ECE178_nios_20_1_nios2_gen2_0_cpu'
 Info: cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
 Info: sys_pll: "sys_sdram_pll_0" instantiated altera_up_altpll "sys_pll"
@@ -164,6 +301,6 @@ Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "r
 Info: Reusing file C:/Users/tasker/Projects/ECE178_nios_system_20_1/ECE178_nios_20_1/synthesis/submodules/altera_merlin_arbitrator.sv
 Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
-Info: ECE178_nios_20_1: Done "ECE178_nios_20_1" with 37 modules, 50 files
+Info: ECE178_nios_20_1: Done "ECE178_nios_20_1" with 40 modules, 53 files
 Info: qsys-generate succeeded.
 Info: Finished: Create HDL design files for synthesis

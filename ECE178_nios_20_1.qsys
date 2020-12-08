@@ -9,55 +9,23 @@
    categories="System" />
  <parameter name="bonusData"><![CDATA[bonusData 
 {
+   element GPIO
+   {
+      datum _sortIndex
+      {
+         value = "15";
+         type = "int";
+      }
+   }
+   element GPIO.s1
+   {
+      datum baseAddress
+      {
+         value = "134230544";
+         type = "String";
+      }
+   }
    element High_Res_Timer
-   {
-      datum _sortIndex
-      {
-         value = "10";
-         type = "int";
-      }
-   }
-   element High_Res_Timer.s1
-   {
-      datum baseAddress
-      {
-         value = "134230048";
-         type = "String";
-      }
-   }
-   element KEYS
-   {
-      datum _sortIndex
-      {
-         value = "8";
-         type = "int";
-      }
-   }
-   element KEYS.s1
-   {
-      datum baseAddress
-      {
-         value = "134230080";
-         type = "String";
-      }
-   }
-   element LEDG
-   {
-      datum _sortIndex
-      {
-         value = "7";
-         type = "int";
-      }
-   }
-   element LEDG.s1
-   {
-      datum baseAddress
-      {
-         value = "134230096";
-         type = "String";
-      }
-   }
-   element System_Timer
    {
       datum _sortIndex
       {
@@ -65,11 +33,67 @@
          type = "int";
       }
    }
+   element High_Res_Timer.irq
+   {
+      datum _tags
+      {
+         value = "";
+         type = "String";
+      }
+   }
+   element High_Res_Timer.s1
+   {
+      datum baseAddress
+      {
+         value = "134230080";
+         type = "String";
+      }
+   }
+   element KEYS
+   {
+      datum _sortIndex
+      {
+         value = "9";
+         type = "int";
+      }
+   }
+   element KEYS.s1
+   {
+      datum baseAddress
+      {
+         value = "134230560";
+         type = "String";
+      }
+   }
+   element LEDG
+   {
+      datum _sortIndex
+      {
+         value = "8";
+         type = "int";
+      }
+   }
+   element LEDG.s1
+   {
+      datum baseAddress
+      {
+         value = "134230576";
+         type = "String";
+      }
+   }
+   element System_Timer
+   {
+      datum _sortIndex
+      {
+         value = "12";
+         type = "int";
+      }
+   }
    element System_Timer.s1
    {
       datum baseAddress
       {
-         value = "134230016";
+         value = "134230048";
          type = "String";
       }
    }
@@ -77,7 +101,7 @@
    {
       datum _sortIndex
       {
-         value = "3";
+         value = "4";
          type = "int";
       }
    }
@@ -85,7 +109,7 @@
    {
       datum baseAddress
       {
-         value = "134230160";
+         value = "134230640";
          type = "String";
       }
    }
@@ -93,7 +117,7 @@
    {
       datum _sortIndex
       {
-         value = "4";
+         value = "5";
          type = "int";
       }
    }
@@ -109,7 +133,7 @@
    {
       datum baseAddress
       {
-         value = "134230144";
+         value = "134230624";
          type = "String";
       }
    }
@@ -117,7 +141,7 @@
    {
       datum _sortIndex
       {
-         value = "9";
+         value = "10";
          type = "int";
       }
    }
@@ -125,7 +149,15 @@
    {
       datum baseAddress
       {
-         value = "134230176";
+         value = "134230656";
+         type = "String";
+      }
+   }
+   element jtag_uart_0.clk
+   {
+      datum _tags
+      {
+         value = "";
          type = "String";
       }
    }
@@ -133,7 +165,7 @@
    {
       datum _sortIndex
       {
-         value = "6";
+         value = "7";
          type = "int";
       }
    }
@@ -141,7 +173,7 @@
    {
       datum baseAddress
       {
-         value = "134230112";
+         value = "134230592";
          type = "String";
       }
    }
@@ -182,11 +214,443 @@
          type = "String";
       }
    }
+   element sbus_decoder_channel_0
+   {
+      datum _sortIndex
+      {
+         value = "27";
+         type = "int";
+      }
+   }
+   element sbus_decoder_channel_0.s1
+   {
+      datum baseAddress
+      {
+         value = "134230368";
+         type = "String";
+      }
+   }
+   element sbus_decoder_channel_1
+   {
+      datum _sortIndex
+      {
+         value = "28";
+         type = "int";
+      }
+   }
+   element sbus_decoder_channel_1.s1
+   {
+      datum baseAddress
+      {
+         value = "134230352";
+         type = "String";
+      }
+   }
+   element sbus_decoder_channel_10
+   {
+      datum _sortIndex
+      {
+         value = "37";
+         type = "int";
+      }
+   }
+   element sbus_decoder_channel_10.s1
+   {
+      datum baseAddress
+      {
+         value = "134230208";
+         type = "String";
+      }
+   }
+   element sbus_decoder_channel_11
+   {
+      datum _sortIndex
+      {
+         value = "38";
+         type = "int";
+      }
+   }
+   element sbus_decoder_channel_11.s1
+   {
+      datum baseAddress
+      {
+         value = "134230192";
+         type = "String";
+      }
+   }
+   element sbus_decoder_channel_12
+   {
+      datum _sortIndex
+      {
+         value = "39";
+         type = "int";
+      }
+   }
+   element sbus_decoder_channel_12.s1
+   {
+      datum baseAddress
+      {
+         value = "134230176";
+         type = "String";
+      }
+   }
+   element sbus_decoder_channel_13
+   {
+      datum _sortIndex
+      {
+         value = "40";
+         type = "int";
+      }
+   }
+   element sbus_decoder_channel_13.s1
+   {
+      datum baseAddress
+      {
+         value = "134230160";
+         type = "String";
+      }
+   }
+   element sbus_decoder_channel_14
+   {
+      datum _sortIndex
+      {
+         value = "41";
+         type = "int";
+      }
+   }
+   element sbus_decoder_channel_14.s1
+   {
+      datum baseAddress
+      {
+         value = "134230144";
+         type = "String";
+      }
+   }
+   element sbus_decoder_channel_15
+   {
+      datum _sortIndex
+      {
+         value = "42";
+         type = "int";
+      }
+   }
+   element sbus_decoder_channel_15.s1
+   {
+      datum baseAddress
+      {
+         value = "134230128";
+         type = "String";
+      }
+   }
+   element sbus_decoder_channel_2
+   {
+      datum _sortIndex
+      {
+         value = "29";
+         type = "int";
+      }
+   }
+   element sbus_decoder_channel_2.s1
+   {
+      datum baseAddress
+      {
+         value = "134230336";
+         type = "String";
+      }
+   }
+   element sbus_decoder_channel_3
+   {
+      datum _sortIndex
+      {
+         value = "30";
+         type = "int";
+      }
+   }
+   element sbus_decoder_channel_3.s1
+   {
+      datum baseAddress
+      {
+         value = "134230320";
+         type = "String";
+      }
+   }
+   element sbus_decoder_channel_4
+   {
+      datum _sortIndex
+      {
+         value = "31";
+         type = "int";
+      }
+   }
+   element sbus_decoder_channel_4.s1
+   {
+      datum baseAddress
+      {
+         value = "134230304";
+         type = "String";
+      }
+   }
+   element sbus_decoder_channel_5
+   {
+      datum _sortIndex
+      {
+         value = "32";
+         type = "int";
+      }
+   }
+   element sbus_decoder_channel_5.s1
+   {
+      datum baseAddress
+      {
+         value = "134230288";
+         type = "String";
+      }
+   }
+   element sbus_decoder_channel_6
+   {
+      datum _sortIndex
+      {
+         value = "33";
+         type = "int";
+      }
+   }
+   element sbus_decoder_channel_6.s1
+   {
+      datum baseAddress
+      {
+         value = "134230272";
+         type = "String";
+      }
+   }
+   element sbus_decoder_channel_7
+   {
+      datum _sortIndex
+      {
+         value = "34";
+         type = "int";
+      }
+   }
+   element sbus_decoder_channel_7.s1
+   {
+      datum baseAddress
+      {
+         value = "134230256";
+         type = "String";
+      }
+   }
+   element sbus_decoder_channel_8
+   {
+      datum _sortIndex
+      {
+         value = "35";
+         type = "int";
+      }
+   }
+   element sbus_decoder_channel_8.s1
+   {
+      datum baseAddress
+      {
+         value = "134230240";
+         type = "String";
+      }
+   }
+   element sbus_decoder_channel_9
+   {
+      datum _sortIndex
+      {
+         value = "36";
+         type = "int";
+      }
+   }
+   element sbus_decoder_channel_9.s1
+   {
+      datum baseAddress
+      {
+         value = "134230224";
+         type = "String";
+      }
+   }
+   element sbus_decoder_reg_0
+   {
+      datum _sortIndex
+      {
+         value = "16";
+         type = "int";
+      }
+   }
+   element sbus_decoder_reg_0.s1
+   {
+      datum baseAddress
+      {
+         value = "134230528";
+         type = "String";
+      }
+   }
+   element sbus_decoder_reg_1
+   {
+      datum _sortIndex
+      {
+         value = "17";
+         type = "int";
+      }
+   }
+   element sbus_decoder_reg_1.s1
+   {
+      datum baseAddress
+      {
+         value = "134230512";
+         type = "String";
+      }
+   }
+   element sbus_decoder_reg_10
+   {
+      datum _sortIndex
+      {
+         value = "26";
+         type = "int";
+      }
+   }
+   element sbus_decoder_reg_10.s1
+   {
+      datum baseAddress
+      {
+         value = "134230112";
+         type = "String";
+      }
+   }
+   element sbus_decoder_reg_2
+   {
+      datum _sortIndex
+      {
+         value = "18";
+         type = "int";
+      }
+   }
+   element sbus_decoder_reg_2.s1
+   {
+      datum baseAddress
+      {
+         value = "134230496";
+         type = "String";
+      }
+   }
+   element sbus_decoder_reg_3
+   {
+      datum _sortIndex
+      {
+         value = "19";
+         type = "int";
+      }
+   }
+   element sbus_decoder_reg_3.s1
+   {
+      datum baseAddress
+      {
+         value = "134230480";
+         type = "String";
+      }
+   }
+   element sbus_decoder_reg_4
+   {
+      datum _sortIndex
+      {
+         value = "20";
+         type = "int";
+      }
+   }
+   element sbus_decoder_reg_4.s1
+   {
+      datum baseAddress
+      {
+         value = "134230464";
+         type = "String";
+      }
+   }
+   element sbus_decoder_reg_5
+   {
+      datum _sortIndex
+      {
+         value = "21";
+         type = "int";
+      }
+   }
+   element sbus_decoder_reg_5.s1
+   {
+      datum baseAddress
+      {
+         value = "134230448";
+         type = "String";
+      }
+   }
+   element sbus_decoder_reg_6
+   {
+      datum _sortIndex
+      {
+         value = "22";
+         type = "int";
+      }
+   }
+   element sbus_decoder_reg_6.s1
+   {
+      datum baseAddress
+      {
+         value = "134230432";
+         type = "String";
+      }
+   }
+   element sbus_decoder_reg_7
+   {
+      datum _sortIndex
+      {
+         value = "23";
+         type = "int";
+      }
+   }
+   element sbus_decoder_reg_7.s1
+   {
+      datum baseAddress
+      {
+         value = "134230416";
+         type = "String";
+      }
+   }
+   element sbus_decoder_reg_8
+   {
+      datum _sortIndex
+      {
+         value = "24";
+         type = "int";
+      }
+   }
+   element sbus_decoder_reg_8.s1
+   {
+      datum baseAddress
+      {
+         value = "134230400";
+         type = "String";
+      }
+   }
+   element sbus_decoder_reg_9
+   {
+      datum _sortIndex
+      {
+         value = "25";
+         type = "int";
+      }
+   }
+   element sbus_decoder_reg_9.s1
+   {
+      datum baseAddress
+      {
+         value = "134230384";
+         type = "String";
+      }
+   }
    element sdram_0
    {
       datum _sortIndex
       {
-         value = "13";
+         value = "3";
          type = "int";
       }
    }
@@ -198,32 +662,19 @@
          type = "boolean";
       }
    }
-   element sram_0
+   element slave_template_0
    {
       datum _sortIndex
       {
-         value = "12";
+         value = "13";
          type = "int";
       }
    }
-   element sram_0.avalon_sram_slave
+   element slave_template_0.s0
    {
-      datum _lockedAddress
-      {
-         value = "0";
-         type = "boolean";
-      }
       datum baseAddress
       {
-         value = "136314880";
-         type = "String";
-      }
-   }
-   element sram_0.external_interface
-   {
-      datum _tags
-      {
-         value = "";
+         value = "134227968";
          type = "String";
       }
    }
@@ -231,7 +682,7 @@
    {
       datum _sortIndex
       {
-         value = "5";
+         value = "6";
          type = "int";
       }
    }
@@ -244,7 +695,7 @@
       }
       datum baseAddress
       {
-         value = "134230128";
+         value = "134230608";
          type = "String";
       }
    }
@@ -254,6 +705,22 @@
       {
          value = "0";
          type = "int";
+      }
+   }
+   element uart_0
+   {
+      datum _sortIndex
+      {
+         value = "14";
+         type = "int";
+      }
+   }
+   element uart_0.s1
+   {
+      datum baseAddress
+      {
+         value = "134230016";
+         type = "String";
       }
    }
 }
@@ -278,6 +745,11 @@
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface name="clk" internal="sys_sdram_pll_0.ref_clk" type="clock" dir="end" />
+ <interface
+   name="gpio_external_connection"
+   internal="GPIO.external_connection"
+   type="conduit"
+   dir="end" />
  <interface
    name="hex0_3"
    internal="hex0_3.external_connection"
@@ -308,6 +780,141 @@
    internal="sys_sdram_pll_0.ref_reset"
    type="reset"
    dir="end" />
+ <interface
+   name="sbus_decoder_channel_0_external_connection"
+   internal="sbus_decoder_channel_0.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sbus_decoder_channel_10_external_connection"
+   internal="sbus_decoder_channel_10.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sbus_decoder_channel_11_external_connection"
+   internal="sbus_decoder_channel_11.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sbus_decoder_channel_12_external_connection"
+   internal="sbus_decoder_channel_12.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sbus_decoder_channel_13_external_connection"
+   internal="sbus_decoder_channel_13.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sbus_decoder_channel_14_external_connection"
+   internal="sbus_decoder_channel_14.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sbus_decoder_channel_15_external_connection"
+   internal="sbus_decoder_channel_15.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sbus_decoder_channel_1_external_connection"
+   internal="sbus_decoder_channel_1.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sbus_decoder_channel_2_external_connection"
+   internal="sbus_decoder_channel_2.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sbus_decoder_channel_3_external_connection"
+   internal="sbus_decoder_channel_3.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sbus_decoder_channel_4_external_connection"
+   internal="sbus_decoder_channel_4.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sbus_decoder_channel_5_external_connection"
+   internal="sbus_decoder_channel_5.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sbus_decoder_channel_6_external_connection"
+   internal="sbus_decoder_channel_6.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sbus_decoder_channel_7_external_connection"
+   internal="sbus_decoder_channel_7.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sbus_decoder_channel_8_external_connection"
+   internal="sbus_decoder_channel_8.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sbus_decoder_channel_9_external_connection"
+   internal="sbus_decoder_channel_9.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sbus_decoder_reg_0_external_connection"
+   internal="sbus_decoder_reg_0.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sbus_decoder_reg_10_external_connection"
+   internal="sbus_decoder_reg_10.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sbus_decoder_reg_1_external_connection"
+   internal="sbus_decoder_reg_1.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sbus_decoder_reg_2_external_connection"
+   internal="sbus_decoder_reg_2.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sbus_decoder_reg_3_external_connection"
+   internal="sbus_decoder_reg_3.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sbus_decoder_reg_4_external_connection"
+   internal="sbus_decoder_reg_4.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sbus_decoder_reg_5_external_connection"
+   internal="sbus_decoder_reg_5.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sbus_decoder_reg_6_external_connection"
+   internal="sbus_decoder_reg_6.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sbus_decoder_reg_7_external_connection"
+   internal="sbus_decoder_reg_7.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sbus_decoder_reg_8_external_connection"
+   internal="sbus_decoder_reg_8.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sbus_decoder_reg_9_external_connection"
+   internal="sbus_decoder_reg_9.external_connection"
+   type="conduit"
+   dir="end" />
  <interface name="sdram" internal="sdram_0.wire" type="conduit" dir="end" />
  <interface
    name="sdram_clk"
@@ -315,10 +922,32 @@
    type="clock"
    dir="start" />
  <interface
+   name="slave_user_interface"
+   internal="slave_template_0.user_interface" />
+ <interface
    name="switches0_17"
    internal="switches0_17.external_connection"
    type="conduit"
    dir="end" />
+ <interface
+   name="uart_0_external_connection"
+   internal="uart_0.external_connection"
+   type="conduit"
+   dir="end" />
+ <module name="GPIO" kind="altera_avalon_pio" version="20.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="8" />
+ </module>
  <module
    name="High_Res_Timer"
    kind="altera_avalon_timer"
@@ -464,7 +1093,7 @@
   <parameter name="dataAddrWidth" value="28" />
   <parameter name="dataMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="dataMasterHighPerformanceMapParam" value="" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='sdram_0.s1' start='0x0' end='0x8000000' type='altera_avalon_new_sdram_controller.s1' /><slave name='onchip_memory2_0.s1' start='0x8001000' end='0x8002000' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_gen2_0.debug_mem_slave' start='0x8002800' end='0x8003000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='System_Timer.s1' start='0x8003000' end='0x8003020' type='altera_avalon_timer.s1' /><slave name='High_Res_Timer.s1' start='0x8003020' end='0x8003040' type='altera_avalon_timer.s1' /><slave name='KEYS.s1' start='0x8003040' end='0x8003050' type='altera_avalon_pio.s1' /><slave name='LEDG.s1' start='0x8003050' end='0x8003060' type='altera_avalon_pio.s1' /><slave name='ledr.s1' start='0x8003060' end='0x8003070' type='altera_avalon_pio.s1' /><slave name='switches0_17.s1' start='0x8003070' end='0x8003080' type='altera_avalon_pio.s1' /><slave name='hex4_7.s1' start='0x8003080' end='0x8003090' type='altera_avalon_pio.s1' /><slave name='hex0_3.s1' start='0x8003090' end='0x80030A0' type='altera_avalon_pio.s1' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x80030A0' end='0x80030A8' type='altera_avalon_jtag_uart.avalon_jtag_slave' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='sdram_0.s1' start='0x0' end='0x8000000' type='altera_avalon_new_sdram_controller.s1' /><slave name='onchip_memory2_0.s1' start='0x8001000' end='0x8002000' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_gen2_0.debug_mem_slave' start='0x8002800' end='0x8003000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='uart_0.s1' start='0x8003000' end='0x8003020' type='altera_avalon_uart.s1' /><slave name='System_Timer.s1' start='0x8003020' end='0x8003040' type='altera_avalon_timer.s1' /><slave name='High_Res_Timer.s1' start='0x8003040' end='0x8003060' type='altera_avalon_timer.s1' /><slave name='sbus_decoder_reg_10.s1' start='0x8003060' end='0x8003070' type='altera_avalon_pio.s1' /><slave name='sbus_decoder_channel_15.s1' start='0x8003070' end='0x8003080' type='altera_avalon_pio.s1' /><slave name='sbus_decoder_channel_14.s1' start='0x8003080' end='0x8003090' type='altera_avalon_pio.s1' /><slave name='sbus_decoder_channel_13.s1' start='0x8003090' end='0x80030A0' type='altera_avalon_pio.s1' /><slave name='sbus_decoder_channel_12.s1' start='0x80030A0' end='0x80030B0' type='altera_avalon_pio.s1' /><slave name='sbus_decoder_channel_11.s1' start='0x80030B0' end='0x80030C0' type='altera_avalon_pio.s1' /><slave name='sbus_decoder_channel_10.s1' start='0x80030C0' end='0x80030D0' type='altera_avalon_pio.s1' /><slave name='sbus_decoder_channel_9.s1' start='0x80030D0' end='0x80030E0' type='altera_avalon_pio.s1' /><slave name='sbus_decoder_channel_8.s1' start='0x80030E0' end='0x80030F0' type='altera_avalon_pio.s1' /><slave name='sbus_decoder_channel_7.s1' start='0x80030F0' end='0x8003100' type='altera_avalon_pio.s1' /><slave name='sbus_decoder_channel_6.s1' start='0x8003100' end='0x8003110' type='altera_avalon_pio.s1' /><slave name='sbus_decoder_channel_5.s1' start='0x8003110' end='0x8003120' type='altera_avalon_pio.s1' /><slave name='sbus_decoder_channel_4.s1' start='0x8003120' end='0x8003130' type='altera_avalon_pio.s1' /><slave name='sbus_decoder_channel_3.s1' start='0x8003130' end='0x8003140' type='altera_avalon_pio.s1' /><slave name='sbus_decoder_channel_2.s1' start='0x8003140' end='0x8003150' type='altera_avalon_pio.s1' /><slave name='sbus_decoder_channel_1.s1' start='0x8003150' end='0x8003160' type='altera_avalon_pio.s1' /><slave name='sbus_decoder_channel_0.s1' start='0x8003160' end='0x8003170' type='altera_avalon_pio.s1' /><slave name='sbus_decoder_reg_9.s1' start='0x8003170' end='0x8003180' type='altera_avalon_pio.s1' /><slave name='sbus_decoder_reg_8.s1' start='0x8003180' end='0x8003190' type='altera_avalon_pio.s1' /><slave name='sbus_decoder_reg_7.s1' start='0x8003190' end='0x80031A0' type='altera_avalon_pio.s1' /><slave name='sbus_decoder_reg_6.s1' start='0x80031A0' end='0x80031B0' type='altera_avalon_pio.s1' /><slave name='sbus_decoder_reg_5.s1' start='0x80031B0' end='0x80031C0' type='altera_avalon_pio.s1' /><slave name='sbus_decoder_reg_4.s1' start='0x80031C0' end='0x80031D0' type='altera_avalon_pio.s1' /><slave name='sbus_decoder_reg_3.s1' start='0x80031D0' end='0x80031E0' type='altera_avalon_pio.s1' /><slave name='sbus_decoder_reg_2.s1' start='0x80031E0' end='0x80031F0' type='altera_avalon_pio.s1' /><slave name='sbus_decoder_reg_1.s1' start='0x80031F0' end='0x8003200' type='altera_avalon_pio.s1' /><slave name='sbus_decoder_reg_0.s1' start='0x8003200' end='0x8003210' type='altera_avalon_pio.s1' /><slave name='GPIO.s1' start='0x8003210' end='0x8003220' type='altera_avalon_pio.s1' /><slave name='KEYS.s1' start='0x8003220' end='0x8003230' type='altera_avalon_pio.s1' /><slave name='LEDG.s1' start='0x8003230' end='0x8003240' type='altera_avalon_pio.s1' /><slave name='ledr.s1' start='0x8003240' end='0x8003250' type='altera_avalon_pio.s1' /><slave name='switches0_17.s1' start='0x8003250' end='0x8003260' type='altera_avalon_pio.s1' /><slave name='hex4_7.s1' start='0x8003260' end='0x8003270' type='altera_avalon_pio.s1' /><slave name='hex0_3.s1' start='0x8003270' end='0x8003280' type='altera_avalon_pio.s1' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x8003280' end='0x8003288' type='altera_avalon_jtag_uart.avalon_jtag_slave' /></address-map>]]></parameter>
   <parameter name="data_master_high_performance_paddr_base" value="0" />
   <parameter name="data_master_high_performance_paddr_size" value="0" />
   <parameter name="data_master_paddr_base" value="0" />
@@ -510,7 +1139,7 @@
   <parameter name="instruction_master_high_performance_paddr_size" value="0" />
   <parameter name="instruction_master_paddr_base" value="0" />
   <parameter name="instruction_master_paddr_size" value="0" />
-  <parameter name="internalIrqMaskSystemInfo" value="39" />
+  <parameter name="internalIrqMaskSystemInfo" value="55" />
   <parameter name="io_regionbase" value="0" />
   <parameter name="io_regionsize" value="0" />
   <parameter name="master_addr_map" value="false" />
@@ -655,6 +1284,492 @@
   <parameter name="writable" value="true" />
  </module>
  <module
+   name="sbus_decoder_channel_0"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="11" />
+ </module>
+ <module
+   name="sbus_decoder_channel_1"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="11" />
+ </module>
+ <module
+   name="sbus_decoder_channel_10"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="11" />
+ </module>
+ <module
+   name="sbus_decoder_channel_11"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="11" />
+ </module>
+ <module
+   name="sbus_decoder_channel_12"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="11" />
+ </module>
+ <module
+   name="sbus_decoder_channel_13"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="11" />
+ </module>
+ <module
+   name="sbus_decoder_channel_14"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="11" />
+ </module>
+ <module
+   name="sbus_decoder_channel_15"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="11" />
+ </module>
+ <module
+   name="sbus_decoder_channel_2"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="11" />
+ </module>
+ <module
+   name="sbus_decoder_channel_3"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="11" />
+ </module>
+ <module
+   name="sbus_decoder_channel_4"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="11" />
+ </module>
+ <module
+   name="sbus_decoder_channel_5"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="11" />
+ </module>
+ <module
+   name="sbus_decoder_channel_6"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="11" />
+ </module>
+ <module
+   name="sbus_decoder_channel_7"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="11" />
+ </module>
+ <module
+   name="sbus_decoder_channel_8"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="11" />
+ </module>
+ <module
+   name="sbus_decoder_channel_9"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="11" />
+ </module>
+ <module
+   name="sbus_decoder_reg_0"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="16" />
+ </module>
+ <module
+   name="sbus_decoder_reg_1"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="16" />
+ </module>
+ <module
+   name="sbus_decoder_reg_10"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="16" />
+ </module>
+ <module
+   name="sbus_decoder_reg_2"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="16" />
+ </module>
+ <module
+   name="sbus_decoder_reg_3"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="16" />
+ </module>
+ <module
+   name="sbus_decoder_reg_4"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="16" />
+ </module>
+ <module
+   name="sbus_decoder_reg_5"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="16" />
+ </module>
+ <module
+   name="sbus_decoder_reg_6"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="16" />
+ </module>
+ <module
+   name="sbus_decoder_reg_7"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="16" />
+ </module>
+ <module
+   name="sbus_decoder_reg_8"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="16" />
+ </module>
+ <module
+   name="sbus_decoder_reg_9"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="16" />
+ </module>
+ <module
    name="sdram_0"
    kind="altera_avalon_new_sdram_controller"
    version="20.1"
@@ -683,11 +1798,30 @@
   <parameter name="registerDataIn" value="true" />
   <parameter name="rowWidth" value="13" />
  </module>
- <module name="sram_0" kind="altera_up_avalon_sram" version="18.0" enabled="0">
-  <parameter name="AUTO_CLK_CLOCK_RATE" value="50000000" />
-  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
-  <parameter name="board" value="DE2-115" />
-  <parameter name="pixel_buffer" value="false" />
+ <module
+   name="slave_template_0"
+   kind="slave_template"
+   version="2.0"
+   enabled="0">
+  <parameter name="DATA_WIDTH" value="32" />
+  <parameter name="ENABLE_SYNC_SIGNALS" value="0" />
+  <parameter name="IRQ_EN" value="0" />
+  <parameter name="MODE_0" value="2" />
+  <parameter name="MODE_1" value="2" />
+  <parameter name="MODE_10" value="2" />
+  <parameter name="MODE_11" value="2" />
+  <parameter name="MODE_12" value="2" />
+  <parameter name="MODE_13" value="2" />
+  <parameter name="MODE_14" value="2" />
+  <parameter name="MODE_15" value="2" />
+  <parameter name="MODE_2" value="2" />
+  <parameter name="MODE_3" value="2" />
+  <parameter name="MODE_4" value="2" />
+  <parameter name="MODE_5" value="2" />
+  <parameter name="MODE_6" value="2" />
+  <parameter name="MODE_7" value="2" />
+  <parameter name="MODE_8" value="2" />
+  <parameter name="MODE_9" value="2" />
  </module>
  <module
    name="switches0_17"
@@ -723,22 +1857,29 @@
   <parameter name="gui_refclk" value="50.0" />
   <parameter name="other_boards" value="None" />
  </module>
+ <module name="uart_0" kind="altera_avalon_uart" version="20.1" enabled="1">
+  <parameter name="baud" value="115200" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="dataBits" value="8" />
+  <parameter name="fixedBaud" value="false" />
+  <parameter name="parity" value="EVEN" />
+  <parameter name="simCharStream" value="" />
+  <parameter name="simInteractiveInputEnable" value="false" />
+  <parameter name="simInteractiveOutputEnable" value="false" />
+  <parameter name="simTrueBaud" value="false" />
+  <parameter name="stopBits" value="2" />
+  <parameter name="syncRegDepth" value="2" />
+  <parameter name="useCtsRts" value="false" />
+  <parameter name="useEopRegister" value="false" />
+  <parameter name="useRelativePathForSimFile" value="false" />
+ </module>
  <connection
    kind="avalon"
    version="20.1"
    start="nios2_gen2_0.data_master"
    end="jtag_uart_0.avalon_jtag_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x080030a0" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="20.1"
-   start="nios2_gen2_0.data_master"
-   end="sram_0.avalon_sram_slave">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x08200000" />
+  <parameter name="baseAddress" value="0x08003280" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -746,6 +1887,15 @@
    version="20.1"
    start="nios2_gen2_0.data_master"
    end="nios2_gen2_0.debug_mem_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x08002800" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="slave_template_0.s0">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x08002800" />
   <parameter name="defaultConnection" value="false" />
@@ -765,7 +1915,7 @@
    start="nios2_gen2_0.data_master"
    end="hex0_3.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x08003090" />
+  <parameter name="baseAddress" value="0x08003270" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -774,7 +1924,7 @@
    start="nios2_gen2_0.data_master"
    end="hex4_7.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x08003080" />
+  <parameter name="baseAddress" value="0x08003260" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -783,7 +1933,7 @@
    start="nios2_gen2_0.data_master"
    end="switches0_17.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x08003070" />
+  <parameter name="baseAddress" value="0x08003250" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -792,7 +1942,7 @@
    start="nios2_gen2_0.data_master"
    end="ledr.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x08003060" />
+  <parameter name="baseAddress" value="0x08003240" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -801,7 +1951,7 @@
    start="nios2_gen2_0.data_master"
    end="High_Res_Timer.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x08003020" />
+  <parameter name="baseAddress" value="0x08003040" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -810,7 +1960,7 @@
    start="nios2_gen2_0.data_master"
    end="System_Timer.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x08003000" />
+  <parameter name="baseAddress" value="0x08003020" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -828,7 +1978,7 @@
    start="nios2_gen2_0.data_master"
    end="LEDG.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x08003050" />
+  <parameter name="baseAddress" value="0x08003230" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -837,16 +1987,268 @@
    start="nios2_gen2_0.data_master"
    end="KEYS.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x08003040" />
+  <parameter name="baseAddress" value="0x08003220" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
    kind="avalon"
    version="20.1"
-   start="nios2_gen2_0.instruction_master"
-   end="sram_0.avalon_sram_slave">
+   start="nios2_gen2_0.data_master"
+   end="uart_0.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x08200000" />
+  <parameter name="baseAddress" value="0x08003000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="GPIO.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x08003210" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="sbus_decoder_reg_0.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x08003200" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="sbus_decoder_reg_1.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x080031f0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="sbus_decoder_reg_2.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x080031e0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="sbus_decoder_reg_3.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x080031d0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="sbus_decoder_reg_4.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x080031c0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="sbus_decoder_reg_5.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x080031b0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="sbus_decoder_reg_6.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x080031a0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="sbus_decoder_reg_7.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x08003190" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="sbus_decoder_reg_8.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x08003180" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="sbus_decoder_reg_9.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x08003170" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="sbus_decoder_channel_0.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x08003160" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="sbus_decoder_channel_1.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x08003150" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="sbus_decoder_channel_2.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x08003140" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="sbus_decoder_channel_3.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x08003130" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="sbus_decoder_channel_4.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x08003120" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="sbus_decoder_channel_5.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x08003110" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="sbus_decoder_channel_6.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x08003100" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="sbus_decoder_channel_7.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x080030f0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="sbus_decoder_channel_8.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x080030e0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="sbus_decoder_channel_9.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x080030d0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="sbus_decoder_channel_10.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x080030c0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="sbus_decoder_channel_11.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x080030b0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="sbus_decoder_channel_12.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x080030a0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="sbus_decoder_channel_13.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x08003090" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="sbus_decoder_channel_14.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x08003080" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="sbus_decoder_channel_15.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x08003070" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="sbus_decoder_reg_10.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x08003060" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -925,11 +2327,6 @@
    kind="clock"
    version="20.1"
    start="sys_sdram_pll_0.sys_clk"
-   end="sram_0.clk" />
- <connection
-   kind="clock"
-   version="20.1"
-   start="sys_sdram_pll_0.sys_clk"
    end="LEDG.clk" />
  <connection
    kind="clock"
@@ -940,7 +2337,157 @@
    kind="clock"
    version="20.1"
    start="sys_sdram_pll_0.sys_clk"
+   end="uart_0.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="GPIO.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="sbus_decoder_reg_0.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="sbus_decoder_reg_1.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="sbus_decoder_reg_2.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="sbus_decoder_reg_3.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="sbus_decoder_reg_4.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="sbus_decoder_reg_5.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="sbus_decoder_reg_6.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="sbus_decoder_reg_7.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="sbus_decoder_reg_8.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="sbus_decoder_reg_9.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="sbus_decoder_channel_0.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="sbus_decoder_channel_1.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="sbus_decoder_channel_2.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="sbus_decoder_channel_3.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="sbus_decoder_channel_4.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="sbus_decoder_channel_5.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="sbus_decoder_channel_6.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="sbus_decoder_channel_7.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="sbus_decoder_channel_8.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="sbus_decoder_channel_9.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="sbus_decoder_channel_10.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="sbus_decoder_channel_11.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="sbus_decoder_channel_12.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="sbus_decoder_channel_13.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="sbus_decoder_channel_14.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="sbus_decoder_channel_15.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="sbus_decoder_reg_10.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
    end="onchip_memory2_0.clk1" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_sdram_pll_0.sys_clk"
+   end="slave_template_0.clock_reset" />
  <connection
    kind="interrupt"
    version="20.1"
@@ -970,6 +2517,25 @@
   <parameter name="irqNumber" value="2" />
  </connection>
  <connection
+   kind="interrupt"
+   version="20.1"
+   start="nios2_gen2_0.irq"
+   end="uart_0.irq">
+  <parameter name="irqNumber" value="4" />
+ </connection>
+ <connection
+   kind="interrupt"
+   version="20.1"
+   start="nios2_gen2_0.irq"
+   end="slave_template_0.slv_irq">
+  <parameter name="irqNumber" value="3" />
+ </connection>
+ <connection
+   kind="reset"
+   version="20.1"
+   start="nios2_gen2_0.debug_reset_request"
+   end="slave_template_0.clock_reset_reset" />
+ <connection
    kind="reset"
    version="20.1"
    start="nios2_gen2_0.debug_reset_request"
@@ -1014,11 +2580,6 @@
    version="20.1"
    start="nios2_gen2_0.debug_reset_request"
    end="sdram_0.reset" />
- <connection
-   kind="reset"
-   version="20.1"
-   start="nios2_gen2_0.debug_reset_request"
-   end="sram_0.reset" />
  <connection
    kind="reset"
    version="20.1"
@@ -1038,6 +2599,11 @@
    kind="reset"
    version="20.1"
    start="sys_sdram_pll_0.reset_source"
+   end="slave_template_0.clock_reset_reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
    end="nios2_gen2_0.reset" />
  <connection
    kind="reset"
@@ -1083,12 +2649,152 @@
    kind="reset"
    version="20.1"
    start="sys_sdram_pll_0.reset_source"
-   end="sram_0.reset" />
+   end="KEYS.reset" />
  <connection
    kind="reset"
    version="20.1"
    start="sys_sdram_pll_0.reset_source"
-   end="KEYS.reset" />
+   end="uart_0.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
+   end="GPIO.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
+   end="sbus_decoder_reg_0.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
+   end="sbus_decoder_reg_1.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
+   end="sbus_decoder_reg_2.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
+   end="sbus_decoder_reg_3.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
+   end="sbus_decoder_reg_4.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
+   end="sbus_decoder_reg_5.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
+   end="sbus_decoder_reg_6.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
+   end="sbus_decoder_reg_7.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
+   end="sbus_decoder_reg_8.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
+   end="sbus_decoder_reg_9.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
+   end="sbus_decoder_channel_0.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
+   end="sbus_decoder_channel_1.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
+   end="sbus_decoder_channel_2.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
+   end="sbus_decoder_channel_3.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
+   end="sbus_decoder_channel_4.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
+   end="sbus_decoder_channel_5.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
+   end="sbus_decoder_channel_6.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
+   end="sbus_decoder_channel_7.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
+   end="sbus_decoder_channel_8.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
+   end="sbus_decoder_channel_9.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
+   end="sbus_decoder_channel_10.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
+   end="sbus_decoder_channel_11.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
+   end="sbus_decoder_reg_10.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
+   end="sbus_decoder_channel_15.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
+   end="sbus_decoder_channel_14.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
+   end="sbus_decoder_channel_13.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_sdram_pll_0.reset_source"
+   end="sbus_decoder_channel_12.reset" />
  <connection
    kind="reset"
    version="20.1"
